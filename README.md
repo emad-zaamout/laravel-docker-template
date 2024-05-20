@@ -7,7 +7,16 @@ Server, runs as non root user for enhanced security.
 
 If your new to docker, you can watch my courses at https://www.youtube.com/channel/UCrw3F3hnsOGRXFJXHo_Ri6w
 
-To use, clone this repo inside your Laravel project.
+To use, clone this repo first, then create your laravel project. If you already have your laravel project files created, then clonning wont work because your dir is not empty. in this case just clone files to a new directory, delete the .git file inside the new directory and copy all the fiels to your laravel project. I.e
+````
+mkdir laravel-docker-template
+git clone https://github.com/emad-zaamout/laravel-docker-template laravel-docker-template
+rm -rf laravel-docker-template/.git
+
+mv laravel-docker-template/* your_laravel_project_dir
+````
+
+
 Inside your .env file, add the following values for your database
 ````
 DB_CONNECTION=mysql
