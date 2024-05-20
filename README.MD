@@ -1,5 +1,5 @@
 
-##Docker Template for Laravel
+#Docker Template for Laravel
 #####Using PHP 8, PHP-FPM, Nginx and PCOV for testing
 
 Server, runs as non root user for enhanced security.
