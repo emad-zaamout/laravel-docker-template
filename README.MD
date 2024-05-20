@@ -1,8 +1,9 @@
 
-#Docker Template for Laravel
+Docker Template for Laravel
 #####Using PHP 8, PHP-FPM, Nginx and PCOV for testing
-
 Server, runs as non root user for enhanced security.
+
+If your new to docker, you can watch my courses at https://www.youtube.com/channel/UCrw3F3hnsOGRXFJXHo_Ri6w
 
 To use, clone this repo inside your Laravel project.
 Inside your .env file, add the following values for your database
