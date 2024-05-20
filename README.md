@@ -12,7 +12,7 @@ To use, clone this repo first, then create your laravel project. If you already 
 mkdir laravel-docker-template
 git clone https://github.com/emad-zaamout/laravel-docker-template laravel-docker-template
 rm -rf laravel-docker-template/.git
-mv laravel-docker-template/* your_laravel_project_dir
+cp -R laravel-docker-template/* your_laravel_project_dir
 ````
 
 
