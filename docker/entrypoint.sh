@@ -1,5 +1,7 @@
 #!/bin/sh -e
 
+composer install
+
 if [ ! -f ".env" ]; then
     if [ ! -z "$APP_ENV" ] && [ -f ".env.$APP_ENV" ]; then
         cp .env.$APP_ENV .env
@@ -7,12 +9,11 @@ if [ ! -f ".env" ]; then
         cp .env.example .env
         echo "Using example env file"
     fi
-
-    php artisan key:generate
 else
     echo "Using existing .env"
 fi
 
+php artisan key:generate
 php artisan migrate
 
 # Set max concurrency to match pm.max_children. Default to 4
